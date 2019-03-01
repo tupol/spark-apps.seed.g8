@@ -2,7 +2,7 @@
 
 This is a [Giter8][g8] template for `spark-utils` based projects.
 
-It help setting up a Spark application project quickly.
+It helps setting up a Spark application project quickly.
 
 ## Basic usage
 
@@ -15,6 +15,7 @@ To fill in the options in advance
 ```
 g8 tupol/spark-apps.seed.g8 --name="My Project" --appname="My App" --organization="my.org" --force
 ```
+
 
 ## References
 

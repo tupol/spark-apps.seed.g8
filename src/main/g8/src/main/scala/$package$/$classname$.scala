@@ -20,7 +20,7 @@ object $classname$ extends SparkApp[$classname$Context, Unit] {
     outputData.sink(context.output).write
   }
   
-  def transform(dataframe: DataFrame): DataFrame = {
+  def transform(dataframe: DataFrame)(implicit spark: SparkSession): DataFrame = {
     //TODO Write the application logic here
     dataframe
   }
