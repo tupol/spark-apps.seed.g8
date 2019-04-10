@@ -1,9 +1,9 @@
-name         := """$name;format="norm"$"""
+name         := "$name;format="norm"$"
 organization := "$organization$"
-scalaVersion := "2.11.12"
+scalaVersion := "$scalaVersion$"
 
 val sparkUtilsVersion = "0.3.1"
-val sparkVersion      = "2.3.2"
+val sparkVersion      = "$sparkVersion$"
 val sparkXmlVersion   = "0.4.1"
 val sparkAvroVersion  = "4.0.0"
 
