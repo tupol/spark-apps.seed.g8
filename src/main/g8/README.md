@@ -2,7 +2,7 @@
 
 ## Description
 
-$description$
+My first `spark-utils` based projects.
 
 
 ## Next steps
