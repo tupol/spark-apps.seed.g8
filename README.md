@@ -11,6 +11,20 @@ To fill in manually the project options run
 g8 tupol/spark-apps.seed.g8
 ```
 
+The default options look like the following:
+```
+name [My Project]:
+appname [My First App]:
+organization [my.org]:
+version [0.0.1-SNAPSHOT]:
+package [my.org.my_project]:
+classname [MyFirstApp]:
+scriptname [my-first-app]:
+scalaVersion [2.11.12]:
+sparkVersion [2.4.0]:
+sparkUtilsVersion [0.4.0]:
+```
+
 To fill in the options in advance
 ```
 g8 tupol/spark-apps.seed.g8 --name="My Project" --appname="My App" --organization="my.org" --force
