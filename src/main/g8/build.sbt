@@ -4,8 +4,7 @@ scalaVersion := "$scalaVersion$"
 
 val sparkUtilsVersion = "$sparkUtilsVersion$"
 val sparkVersion      = "$sparkVersion$"
-val sparkXmlVersion   = "0.4.1"
-val sparkAvroVersion  = "4.0.0"
+val sparkXmlVersion   = "0.10.0"
 
 
 // ------------------------------
@@ -20,8 +19,8 @@ lazy val providedDependencies = Seq(
   "org.apache.spark" %% "spark-sql" % sparkVersion force(),
   "org.apache.spark" %% "spark-mllib" % sparkVersion force(),
   "org.apache.spark" %% "spark-streaming" % sparkVersion force(),
-  "com.databricks" %% "spark-xml" % sparkXmlVersion,
-  "com.databricks" %% "spark-avro" % sparkAvroVersion
+  "org.apache.spark" %% "spark-avro" % sparkVersion,
+  "com.databricks" %% "spark-xml" % sparkXmlVersion
 )
 
 libraryDependencies ++= providedDependencies.map(_ % "provided")
@@ -31,8 +30,8 @@ libraryDependencies ++= Seq(
   "org.tupol" %% "spark-utils" % sparkUtilsVersion % "test" classifier "tests",
   "org.scalacheck" %% "scalacheck" % "1.14.0" % "test",
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
-  "com.databricks" %% "spark-xml" % sparkXmlVersion % "test",
-  "com.databricks" %% "spark-avro" % sparkAvroVersion % "test"
+  "org.apache.spark" %% "spark-avro" % sparkVersion % "test",
+  "com.databricks" %% "spark-xml" % sparkXmlVersion % "test"
 )
 
 // ------------------------------
